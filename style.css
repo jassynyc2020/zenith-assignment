@@ -62,6 +62,7 @@
 
 .main-top-landing {
   display: grid;
+  margin: 1em;
   grid-template-columns: 1fr auto;
   grid-template-rows: 1fr 1fr;
   background: url(./images/hero-bg-texture.png);

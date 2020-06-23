@@ -1,0 +1,172 @@
+/* mobile styles --------------------- */
+/* fonts */
+@font-face {
+    font-family: 'futura';
+    src: url(./fonts/futura-heavy\ \(1\).ttf);
+    font-style: bold;
+    font-weight: 900;
+    font-family: 'futura';
+    src: url(./fonts/futura-book.ttf);
+    font-style: normal;
+    font-weight: 300;
+}
+/* base */
+    body {
+        font-family: 'futura';
+        font-weight: bold;
+    }
+
+
+/* layput */
+.navbar {
+        display: flex;
+        justify-content: space-evenly ;
+        padding: 1em;
+        margin-bottom: 5em;
+    }
+
+.top-line-hamburger-menu, .bottom-line-hamburger-menu {
+        display: flex;
+        height: 3px;
+        background-color: blueviolet;
+        margin: 6px 0;
+    }
+
+.top-line-hamburger-menu {
+        width: 40px
+    }
+.bottom-line-hamburger-menu  {
+        width: 30px;
+    }
+
+.hamburger-menus {
+        display: flex;   
+    }
+
+.zenith-logo {
+       width: 130px;  
+       padding-right: 7em;
+    }
+
+.inbound-card-section {
+    position: absolute;
+    margin-top: ;
+}
+
+.inbound-card-image {
+    width: 300px;
+    height: 100px;
+    margin-top: 200px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15); 
+}
+
+.main-top-landing {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr 1fr;
+  background: url(./images/hero-bg-texture.png);
+}
+
+.main-level-heading {
+    position: absolute;
+    width: 130px;
+    font-family: 'futura';
+    font-style: heavy;
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    color: #393939;   
+}
+
+.hero-big {
+    width: 700px;
+    height: 390px;
+    left: -440px;
+    bottom: 15px;
+}
+
+.features-heading> h1 {
+    padding-left: 1em;
+    font-family: "futura";
+    font-style: bold;
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: blueviolet
+}
+
+.checkboxes, .integrations, .notifications {
+    display: flex;
+    padding: 1em;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);  
+}
+
+.checkboxes-image, .integration-image, .notifications-image {
+    width: 20px;   
+}
+
+.zenith-dashboard img {
+    display: flex;
+    margin-top: 4.5em;
+    margin-bottom: 8em;
+    width: 300px;
+    height: 200px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);  
+}
+
+.slack, .google, .trello, .jira {
+   width: 80px;
+   height: 30px; 
+}
+
+.trello-jira {
+    padding-left: 6.5em;
+}
+
+.sponsers {
+   display: flex; 
+}
+
+.favorite-heading> h1 {
+    padding-left: 1em;
+    font-family: "futura";
+    font-style: bold;
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: blueviolet
+}
+
+.slack-google, .trello-jira {
+    padding: 1em;
+}
+.trello-jira {
+    padding-left: 6em;
+}
+
+.asana-logo> img {
+    width: 120px;
+    height: 70px;
+}
+
+.asana-logo {
+    display: flex;
+    justify-content: center;
+}
+
+/* blocks */
+
+/* tablet styles */
+@media (min-width: 550px) {
+}
+
+
+
+/* desktop styles */
+@media (min-width: 990px) {
+    /* .navbar {
+        /* <a href="#">FEATURES</a>
+          <a href="#">INTEGRATIONS</a>
+          <a class="get-zenith-button" href="#">GET ZENITH</a> */
+f

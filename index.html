@@ -2,24 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="https" />
     <title>Zenith</title>
   </head>
   <body>
-    <header>
-      <div class="navbar">
-        <img
-          class="zenith-logo"
-          src="./images/zenith-logo.png"
-          alt="Zenith logo"
-        />
-        <nav class="hamburger-menu">
-          <div class="top-line-hamburger-menu"></div>
-          <div class="bottom-line-hamburger-menu"></div>
+    <header class="header-container">
+        <nav class="header-nav">
+          <img
+            class="zenith-logo"
+            src="./images/zenith-logo.png"
+            alt="Zenith logo"
+          />
+          <ul class="header-nav-ul">
+            <li>Features</li>
+            <li>Integration</li>
+            <li>Get Zenith</li>
+          </ul>
+          <div class="hamburger-menu">
+            <span class="top-line-hamburger-menu"></span>
+            <span class="bottom-line-hamburger-menu"></span>
+          </div> 
         </nav>
-      </div>
     </header>
     <section>
       <div class="main-top-landing">
@@ -37,22 +41,24 @@
           src="./images/hero-bg-texture.png"
           alt="big-hero"
         />
-      </div>
+        <!-- <div class="hero-bg-cards">
+          <img src="./images/hero-bg-cards.png" alt="cards">
+        </div> -->
     </section>
     <section>
-      <div class="features-container">
+    <div class="features-container">
         <div class="features-heading">
           <h1>The features that matter</h1>
         </div>
-        <div class="checkboxes">
-          <h3>Mark all your completed threads in one place</h3>
-          <img
+        <div class="checkboxes-section">
+            <h3>Mark all your completed threads in one place</h3>
+            <img
             class="checkboxes-image"
             src="./images/features-checkboxes.png"
             alt="checkboxes"
-          />
+            />
         </div>
-        <div class="integrations">
+        <div class="integrations-section">
           <h3>Integrate all your communication platforms</h3>
           <img
             class="integration-image"
@@ -60,7 +66,7 @@
             alt="integration"
           />
         </div>
-        <div class="notifications">
+        <div class="notifications-section">
           <h3>See all your notifications in one place</h3>
           <img
             class="notifications-image"
@@ -68,7 +74,7 @@
             alt="notification"
           />
         </div>
-      </div>
+    </div>
     </section>
     <section>
       <div class="zenith-dashboard">
@@ -98,9 +104,32 @@
             </div>
         </section>
         <section>
-        <div class="contact-container">
-            
-        </div>
+        <footer class="footer">
+          <div class="footer-container">
+            <h2>Stay up to date</h2>
+          </div>
+          <div class="footer-desktop-buttons">
+            <form action="#">
+              <input type="text" class="name" name="name"
+              placeholder="Name">
+            </form> 
+            <button class="sign-button">SIGN UP</button>
+          </div>
+          <div class="footer-mobile-button">
+            <form action="#">
+            <input type="text" class="email" name="email"
+                    placeholder="Email address">
+            </form> 
+            <button class="download-button">DOWNLOAD</button>
+          </div>
+              <ul class="footer-nav-ul">
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">OUR TEAM</a></li>
+                <li><a href="#">POLICIES</a></li>
+                <li><a href="#">PRIVACY & TERMS</a></li>
+              </ul>
+            </div>
+        </footer>
         </section>
   </body>
 </html>

@@ -2,56 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="EI=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
-    <link rel="stylesheet" href="./style.css" />
-    <title>Zenith</title>
+    <link href="./fonts/futura-book.ttf" href="./fonts/futura-heavy (1).ttf">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <meta name="description" content="Zenith landing page by Nishi Haider">
+    <title>Zenith Landing Page</title>
   </head>
   <body>
-    <header class="header-container">
-        <nav class="header-nav">
-          <img
-            class="zenith-logo"
-            src="./images/zenith-logo.png"
-            alt="Zenith logo"
-          />
-          <ul class="header-nav-ul">
-            <li>Features</li>
-            <li>Integration</li>
-            <li>Get Zenith</li>
-          </ul>
-          <div class="hamburger-menu">
-            <span class="top-line-hamburger-menu"></span>
-            <span class="bottom-line-hamburger-menu"></span>
-          </div> 
-        </nav>
-    </header>
-    <section>
-      <div class="main-top-landing">
-        <div class="main-level-heading">
-          <h1>
+    <nav class="header-nav">
+      <img
+      class="zenith-logo"
+      src="./images/zenith-logo.png"
+      alt="Zenith logo"
+      />
+      <ul class="header-nav-list">
+        <li class="header-nav-item">Features</li>
+        <li class="header-nav-item">Integration</li>
+        <li class="header-nav-item">Get Zenith</li>
+      </ul>
+      <div class="hamburger-menu">
+        <span class="top-line-hamburger-menu"></span>
+        <span class="bottom-line-hamburger-menu"></span>
+      </div> 
+    </nav>
+  <header class="hero">
+      <div class="hero-landing">
+          <h1 class="hero-heading">
             All your communication.<br />
             One place.
           </h1>
-        </div>
-        <div class="inbound-card-section">
-            <img class="inbound-card-image" src="./images/inbound-card.png" alt="inbound">
-        </div>
+      </div>
+      <div class="inbound-card-section">
+          <img class="inbound-card-image" src="./images/inbound-card.png" alt="inbound">
+      </div>
         <img
-          class="hero-big"
-          src="./images/hero-bg-texture.png"
-          alt="big-hero"
+        class="hero-big"
+        src="./images/hero-bg-texture.png"
+        alt="big-hero"
         />
-        <!-- <div class="hero-bg-cards">
-          <img src="./images/hero-bg-cards.png" alt="cards">
-        </div> -->
-    </section>
-    <section>
+    </header>
     <div class="features-container">
-        <div class="features-heading">
-          <h1>The features that matter</h1>
-        </div>
-        <div class="checkboxes-section">
-            <h3>Mark all your completed threads in one place</h3>
+          <h1 class="features-heading">The features that matter</h1>
+          <div class="checkboxes-section">
+            <h3 class="checkboxes-description">Mark all your completed threads in one place</h3>
             <img
             class="checkboxes-image"
             src="./images/features-checkboxes.png"
@@ -59,7 +53,7 @@
             />
         </div>
         <div class="integrations-section">
-          <h3>Integrate all your communication platforms</h3>
+          <h3 class="integrations-description">Integrate all your communication platforms</h3>
           <img
             class="integration-image"
             src="./images/features-integrations.png"
@@ -67,25 +61,19 @@
           />
         </div>
         <div class="notifications-section">
-          <h3>See all your notifications in one place</h3>
+          <h3 class="notifications-description">See all your notifications in one place</h3>
           <img
             class="notifications-image"
             src="./images/features-notifications.png"
             alt="notification"
           />
         </div>
-    </div>
-    </section>
-    <section>
       <div class="zenith-dashboard">
         <img src="./images/zenith-dasboard.png" alt="Zenith dashboard" />
       </div>
-    </section>
-    <section>
       <div class="favorite-container">
-        <div class="favorite-heading">
-          <h1>Your favorite products finally together</h1>
-        </div>
+          <h1 class="favorite-heading">Your favorite products finally together</h1>
+      </div>
         <div class="sponsers">
           <div class="slack-google">
             <img class="slack" src="./images/slack-full.png" alt="slack" />
@@ -95,27 +83,22 @@
             <img class="trello" src="./images/trello.png" alt="trello" />
             <img class="jira" src="./images/jira.png" alt="jira" />
           </div>
-      </div>
-</div>
-</section>
-        <section>
-            <div class="asana-logo">
+        </div>
+            <div class="asana-logo section">
                 <img src="./images/asana (2).png" alt="asana">
             </div>
-        </section>
-        <section>
         <footer class="footer">
           <div class="footer-container">
-            <h2>Stay up to date</h2>
+            <h2 class="footer-title">Stay up to date</h2>
           </div>
           <div class="footer-desktop-buttons">
             <form action="#">
               <input type="text" class="name" name="name"
-              placeholder="Name">
-            </form> 
-            <button class="sign-button">SIGN UP</button>
+                      placeholder="Name">
+              <input type="text" class="sign-button" name="sign-up"
+                      placeholder="SIGN UP">       
           </div>
-          <div class="footer-mobile-button">
+          <div class="footer-mobile-button section">
             <form action="#">
             <input type="text" class="email" name="email"
                     placeholder="Email address">
@@ -123,10 +106,10 @@
             <button class="download-button">DOWNLOAD</button>
           </div>
               <ul class="footer-nav-ul">
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">OUR TEAM</a></li>
-                <li><a href="#">POLICIES</a></li>
-                <li><a href="#">PRIVACY & TERMS</a></li>
+                <li class="footer-nav-item"><a href="#">CONTACT</a></li>
+                <li class="footer-nav-item"><a href="#">OUR TEAM</a></li>
+                <li class="footer-nav-item"><a href="#">POLICIES</a></li>
+                <li class="footer-nav-item"><a href="#">PRIVACY & TERMS</a></li>
               </ul>
             </div>
         </footer>

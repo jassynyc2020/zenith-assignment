@@ -1,24 +1,72 @@
-/* mobile styles --------------------- */
-/* fonts */
+/* base */
+body,
+html {
+  font-family: "futura";
+  font-weight: bold;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+}
+/* Global styles */
+:root {
+  --font-color: #ffffff;
+  --border-color: #ff0000;
+  --accent-color: linear-gradient(229.93deg, #ab00ff -21.91%, #007bff 133.89%);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  text-transform: capitalize;
+}
+ul,
+p {
+  margin: 0;
+}
+p {
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  transition: opacity 5s ease-in-out;
+  font-weight: 500;
+  color: inherit;
+}
+img {
+  width: 100%;
+}
+.container {
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  max-width: 1440px;
+}
+.section {
+  margin-bottom: 40px;
+}
 @font-face {
   font-family: "futura";
   src: url(./fonts/futura-book.ttf);
   font-style: normal;
   font-weight: 300;
 }
-
 @media screen and (max-width: 700px) {
-  .header-nav-ul> li {
-      visibility: hidden;
+  .header-nav-ul > li {
+    visibility: hidden;
   }
   .header-nav-ul {
-      visibility: hidden;
+    visibility: hidden;
   }
   .footer-desktop-buttons {
     visibility: hidden;
   }
 }
-
 @media screen and (min-width: 700px) {
   .hamburger-menu {
     visibility: hidden;
@@ -27,74 +75,47 @@
     visibility: hidden;
   }
 }
-
-/* base */
-
-body, html {
-  font-family: "futura";
-  font-weight: bold;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  display: flex;
-}
-
 /* block */
-
-.header-container>nav {
-  display: flex;
-
-  border: 1px solid red;
-}
-
 .header-nav {
+  padding: 15px 0;
   display: flex;
+  position: fixed;
+  width: 100%;
+  background: var(--font-color);
   border: 1px solid red;
 }
-
 .hamburger-menu {
-  border: 1px solid red;
+  width: 100%;
+  height: auto;
+  border: 1px solid orange;
 }
-
 .zenith-logo {
-  width: 160px;
+  width: 130px;
   height: 50px;
-  border: 1px solid red;
+  border: 1px solid green;
 }
 .inbound-card-section {
   position: absolute;
   width: 100px;
 }
-.hero-bg-cards {
-  position: absolute;
-  width: 320px;
-  z-index: -3;
-}
 .hero-big {
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: auto;
   top: 0;
   margin-top: 4em;
   left: -440px;
   bottom: 15px;
 }
-
+.hero-landing {
+  display: grid;
+  /* margin: 1em; */
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr 1fr;
+  background-image: url(./images/hero-bg-cards.png);
+}
 .features-container {
   display: grid;
   border: 1px solid red;
-}
-
-
-
-.main-top-landing {
-  display: grid;
-  margin: 1em;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: 1fr 1fr;
-  background: url(./images/hero-bg-texture.png);
 }
 .checkboxes-section,
 .integrations-section,
@@ -115,7 +136,6 @@ header {
   display: flex;
 }
 /* layput */
-
 .top-line-hamburger-menu,
 .bottom-line-hamburger-menu {
   display: flex;
@@ -123,7 +143,6 @@ header {
   background-color: blueviolet;
   margin: 6px 0;
 }
-
 .top-line-hamburger-menu {
   width: 40px;
   border-radius: 70px;
@@ -133,26 +152,35 @@ header {
   margin-left: 10px;
   border-radius: 70px;
 }
-
-.inbound-card-image {
-  width: 200px;
-  height: 70px;
-  margin-top: 200px;
-  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
+.header-nav-item {
+  padding: 0 10px;
 }
-
-.main-level-heading {
+.header-nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.hero {
+  background-blend-mode: overlay;
+  background-image: url(./images/hero-bg-cards.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.hero-heading {
   position: absolute;
   width: 130px;
   font-family: "futura";
-  font-style: heavy;
+  font-style: normal;
   font-weight: 900;
   font-size: 1rem;
   line-height: 32px;
   letter-spacing: 0.5px;
   color: #393939;
 }
-
 .features-heading > h1 {
   padding-left: 1em;
   font-family: "futura";
@@ -162,25 +190,21 @@ header {
   letter-spacing: 1px;
   color: blueviolet;
 }
-
 .checkboxes-image,
 .integration-image,
 .notifications-image {
   width: 20px;
 }
-
+.slack, .trello {
+  padding-bottom: 1em;
+}
 .slack,
 .google,
 .trello,
 .jira {
-  width: 80px;
-  height: 30px;
+  width: 115px;
+  height: 40px;
 }
-
-.trello-jira {
-  padding-left: 6.5em;
-}
-
 .favorite-heading > h1 {
   padding-left: 1em;
   font-family: "futura";
@@ -190,7 +214,6 @@ header {
   letter-spacing: 1px;
   color: blueviolet;
 }
-
 .slack-google,
 .trello-jira {
   padding: 1em;
@@ -198,310 +221,134 @@ header {
 .trello-jira {
   padding-left: 6em;
 }
-
 .asana-logo > img {
-  width: 120px;
-  height: 70px;
+  width: 150px;
+  height: 105px;
 }
-
 .asana-logo {
   display: flex;
   justify-content: center;
-}
 
+}
 .footer {
   display: grid;
-  background: rgb(169,82,173);
-  background: -moz-linear-gradient(90deg, rgba(169,82,173,1) 0%, rgba(149,0,255,1) 24%);
-  background: -webkit-linear-gradient(90deg, rgba(169,82,173,1) 0%, rgba(149,0,255,1) 24%);
-  background: linear-gradient(90deg, rgba(169,82,173,1) 0%, rgba(149,0,255,1) 24%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a952ad",endColorstr="#9500ff",GradientType=1)
- 
+  background: linear-gradient(229.93deg, #ab00ff -21.91%, #007bff 133.89%);
 }
-
 .footer-container {
-  background-color: blueviolet;
-  display: grid;
+  background: var(--accent-color);
   margin-top: 2em;
   width: 100%;
   border: 1px solid red;
 }
-.footer-container > h2 {
+.footer-title {
   color: white;
   text-align: center;
-  font-family: 'futura';
+  font-family: "futura";
   font-style: normal;
   font-size: 48px;
-  line-height: 2rem;
+  line-height: 1.6;
   letter-spacing: 1.5px;
+  width: 100%;
 }
-
 .footer-nav-ul > li,
-a{
-  color: #F1F1F1;
-  font-family: 'futura';
+a {
+  color: #f1f1f1;
+  font-family: "futura";
   font-size: 10px;
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 1.04px;
   text-align: right;
   text-decoration: none;
-  list-style-type: none;
+  list-style: none;
   line-height: 1.9;
-  /* margin-right: 1em; */
-  border: 1px solid yellow;
+  width: 100%;
 }
-
+.footer-nav-item {
+  justify-self: center;
+}
 .footer-mobile-button {
   display: flex;
   justify-content: space-evenly;
 }
-
-.download-button, .email, .name, .sign-button {
+.download-button,
+.email,
+.name,
+.sign-button {
   border-radius: 34.5px;
-}
-
-/* mobile styles */
-@media (min-width: 550px){
-
-body {
-  display: grid;
-  margin: 0;
-  width: 100%;
-}
-
-.header-container {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 3em;
-  border: 1px solid red;
-}
-
-.header-nav-ul {
-  display: flex;
-  border: 1px solid red;
-}
-
-.header-nav {
-  display: flex;
-  width: 100%;
-}
-
-.header-nav-ul > li {
-  width: 100%;
-  flex-direction: column;
-  padding: 5em;
-  l
-}
-
-.zenith-logo {
-  width: 300px;
-  height: 100px;
-  padding-right: 7em;
-}
-
-/* .hero-big {
-  width: 300px;
-  height: 200px;
-  top: 0;
-  margin-top: 4em;
-  left: -440px;
-  bottom: 15px;
-} */
-
-.hero-big {
-  width: 900px;
-  height: 500px;
-  left: -440px;
-  bottom: 15px;
-}
-
-.main-level-heading {
-  display: flex;
-  position: absolute;
-  margin: 2em;
-  width: 700px;
   font-family: "futura";
-  font-style: heavy;
-  font-weight: 900;
-  font-size: 2rem;
-  line-height: 49px;
-  letter-spacing: 0.5px;
-  color: #393939;
 }
-
-.inbound-card-section {
-  position: absolute;
-  padding-top: 6em;
-}
-
-.inbound-card-image {
-  width: 600px;
-  height: 200px;
-  margin: 15em;
-  margin-top: 250px;
-  border: 1px solid red;
-  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
-}
-
-.features-container {
-  display: grid;
-  justify-content: center;
-  margin-top: 8em;
-  width: 100%;
-  border: 1px solid red;
-}
-
-.features-heading {
-  justify-self: center;
-  
-}
-
-.features-heading>h1 {
-  font-size: 48px;
-}
-
-.features-boxes {
-  display: flex;
-}
-
-.checkboxes-image,
-.integration-image,
-.notifications-image {
-  width: 20px;
-  padding: 2em;
-  border: 1px solid green;
-}
-.favorite-heading > h1 {
-  padding-left: 1em;
-  font-family: "futura";
-  font-style: bold;
-  font-weight: 900;
-  font-size: 50px;
-  letter-spacing: 1px;
-  color: blueviolet;
-}
-
-.zenith-dashboard img {
-  display: flex;
-  margin-top: 4.5em;
-  margin-bottom: 8em;
-  width: 990px;
-  height: 600px;
-  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
-}
-
-.sponsers {
-  display: flex;
-}
-.asana-logo > img {
-  width: 240px;
-  height: 120px;
-}
-
-.asana-logo {
-  padding-right: 1000px;
-}
-
-.slack-google,
-.trello-jira {
-  padding: 10em;
-  flex-direction: column;
-  margin-right: -11em;
-}
-
-.slack,
-.google,
-.trello,
-.jira {
-  width: 150px;
-  height: 80px;
-  padding: 1em;
-  justify-items: center;
-}
-.footer {
-  margin-top: 4em;
-  background-color: blueviolet;
-  display: grid;
-  justify-items: center;
-  width: 100%;
-  height: 400px;
-}
-
-.footer-container {
-  justify-items: center;
-}
-.footer-container > h2 {
-  color: white;
+.name,
+.email {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  align-items: center;
   text-align: center;
+  letter-spacing: 0.5px;
+  background: #ffffff;
+  color: var(--font-color);
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  border-radius: 34.5px;
+  color: var(--font-color);
 }
 
-.footer-desktop-buttons {
-  display: flex;
-  padding: 1em;
-  border: 1px solid red;
-}
+.sign-button {
+  font-family: "futura";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
-
-/* desktop styles */
-@media (min-width: 700px) {
+/* tablet styles */
+@media (min-width: 550px) {
   body {
     display: grid;
     margin: 0;
     width: 100%;
   }
-  
-  .header-container {
+
+  .hero {
     display: flex;
     flex-direction: column;
     margin-bottom: 3em;
     border: 1px solid red;
   }
-  
-  .header-nav-ul {
+
+  .header-nav-list {
     display: flex;
     border: 1px solid red;
   }
-  
-  .header-nav {
-    display: flex;
-    width: 100%;
-  }
-  
-  .header-nav-ul > li {
+
+  .header-nav-list > li {
     width: 100%;
     flex-direction: column;
     padding: 5em;
-    l
   }
-  
+
   .zenith-logo {
     width: 300px;
     height: 100px;
     padding-right: 7em;
   }
 
-  /* .hero-big {
-    width: 300px;
-    height: 200px;
-    top: 0;
-    margin-top: 4em;
-    left: -440px;
-    bottom: 15px;
-  } */
-  
   .hero-big {
-    width: 1200px;
-    height: 700px;
+    width: 900px;
+    height: 500px;
     left: -440px;
     bottom: 15px;
   }
-  
-  .main-level-heading {
+
+  .hero-heading {
     display: flex;
     position: absolute;
-    margin: 2em;
     width: 700px;
     font-family: "futura";
     font-style: heavy;
@@ -511,12 +358,12 @@ body {
     letter-spacing: 0.5px;
     color: #393939;
   }
-  
+
   .inbound-card-section {
     position: absolute;
     padding-top: 6em;
   }
-  
+
   .inbound-card-image {
     width: 600px;
     height: 200px;
@@ -525,7 +372,7 @@ body {
     border: 1px solid red;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
   }
-  
+
   .features-container {
     display: grid;
     justify-content: center;
@@ -536,17 +383,16 @@ body {
 
   .features-heading {
     justify-self: center;
-    
   }
 
-  .features-heading>h1 {
+  .features-heading > h1 {
     font-size: 48px;
   }
 
   .features-boxes {
     display: flex;
   }
-  
+
   .checkboxes-image,
   .integration-image,
   .notifications-image {
@@ -563,7 +409,7 @@ body {
     letter-spacing: 1px;
     color: blueviolet;
   }
-  
+
   .zenith-dashboard img {
     display: flex;
     margin-top: 4.5em;
@@ -572,7 +418,7 @@ body {
     height: 600px;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
   }
-  
+
   .sponsers {
     display: flex;
   }
@@ -580,18 +426,18 @@ body {
     width: 240px;
     height: 120px;
   }
-  
+
   .asana-logo {
     padding-right: 1000px;
   }
-  
+
   .slack-google,
   .trello-jira {
     padding: 10em;
     flex-direction: column;
     margin-right: -11em;
   }
-  
+
   .slack,
   .google,
   .trello,
@@ -609,7 +455,185 @@ body {
     width: 100%;
     height: 400px;
   }
-  
+
+  .footer-container {
+    justify-items: center;
+    margin-bottom: 20px;
+  }
+  .footer-container > h2 {
+    color: white;
+    text-align: center;
+  }
+
+  .footer-desktop-buttons {
+    display: flex;
+    padding: 1em;
+    border: 1px solid red;
+  }
+}
+/* desktop styles */
+@media (min-width: 700px) {
+  body {
+    display: grid;
+    margin: 0;
+    width: 100%;
+  }
+  .header-nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3em;
+    border: 1px solid red;
+  }
+
+  .header-nav-list {
+    display: flex;
+    border: 1px solid red;
+  }
+
+  .header-nav-list > li {
+    width: 100%;
+    flex-direction: column;
+    padding: 5em;
+  }
+
+  .zenith-logo {
+    width: 300px;
+    height: 100px;
+    padding-right: 7em;
+  }
+
+  /* .hero-big {
+    width: 300px;
+    height: 200px;
+    top: 0;
+    margin-top: 4em;
+    left: -440px;
+    bottom: 15px;
+  } */
+
+  .hero-big {
+    max-width: 100%;
+    height: auto;
+    /* width: 1200px;
+    height: 700px;
+    left: -440px;
+    bottom: 15px; */
+  }
+
+  .hero-heading {
+    display: flex;
+    position: absolute;
+    margin: 2em;
+    width: 700px;
+    font-family: "futura";
+    font-style: heavy;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 49px;
+    letter-spacing: 0.5px;
+    color: #393939;
+  }
+
+  .inbound-card-section {
+    position: absolute;
+    padding-top: 6em;
+  }
+
+  .inbound-card-image {
+    width: 600px;
+    height: 200px;
+    margin: 15em;
+    margin-top: 250px;
+    border: 1px solid red;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .features-container {
+    display: grid;
+    justify-content: center;
+    margin-top: 8em;
+    width: 100%;
+    border: 1px solid red;
+  }
+
+  .features-heading {
+    justify-self: center;
+  }
+
+  .features-heading > h1 {
+    font-size: 48px;
+  }
+
+  .features-boxes {
+    display: flex;
+  }
+
+  .checkboxes-image,
+  .integration-image,
+  .notifications-image {
+    width: 20px;
+    padding: 2em;
+    border: 1px solid green;
+  }
+  .favorite-heading > h1 {
+    padding-left: 1em;
+    font-family: "futura";
+    font-style: bold;
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: blueviolet;
+  }
+
+  .zenith-dashboard img {
+    display: flex;
+    margin-top: 4.5em;
+    margin-bottom: 8em;
+    width: 990px;
+    height: 600px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .sponsers {
+    display: flex;
+  }
+  .asana-logo {
+    width: 100%;
+    height: auto;
+
+    /* width: 240px;
+    height: 120px; */
+  }
+
+  .asana-logo {
+    /* padding-right: 1000px; */
+  }
+
+  .slack-google,
+  .trello-jira {
+    padding: 10em;
+    flex-direction: column;
+    margin-right: -11em;
+  }
+
+  .slack,
+  .google,
+  .trello,
+  .jira {
+    width: 150px;
+    height: 80px;
+    padding: 1em;
+    justify-items: center;
+  }
+  .footer {
+    margin-top: 4em;
+    background-color: blueviolet;
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    height: 400px;
+  }
+
   .footer-container {
     justify-items: center;
   }
@@ -617,7 +641,7 @@ body {
     color: white;
     text-align: center;
   }
-  
+
   .footer-desktop-buttons {
     display: flex;
     padding: 1em;

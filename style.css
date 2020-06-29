@@ -76,8 +76,6 @@ img {
   display: flex;
   background-color: white;
   width: 100%;
-  border: 2px solid red;
-
 }
 .hamburger-menu {
   width: 100%;
@@ -90,10 +88,9 @@ img {
   margin: 1em 1em;
   width: 130px;
   height: 50px;
-  border: 2px solid blue;
-
 }
 .hero-big {
+  padding-top: 8em;
   width: 400px;
   height: auto;
 }
@@ -170,8 +167,8 @@ img {
 }
 .inbound-card-image {
   position: absolute;
-  width: 200px;
-  height: 50px;
+  width: 250px;
+  height: 80px;
   margin-top: 250px;
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
 }
@@ -189,7 +186,6 @@ img {
   color: #393939;
 }
 .features-heading > h1 {
-  padding-left: 1em;
   font-style: bold;
   font-weight: 700;
   font-size: 24px;
@@ -215,7 +211,7 @@ img {
 .favorite-heading {
   text-align: center;
   justify-content: center;
-  padding-left: 1em;
+  padding-left: 2em;
   font-style: bold;
   font-weight: 700;
   font-size: 32px;

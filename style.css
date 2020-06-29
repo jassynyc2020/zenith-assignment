@@ -76,6 +76,8 @@ img {
   display: flex;
   background-color: white;
   width: 100%;
+  border: 2px solid red;
+
 }
 .hamburger-menu {
   width: 100%;
@@ -88,6 +90,8 @@ img {
   margin: 1em 1em;
   width: 130px;
   height: 50px;
+  border: 2px solid blue;
+
 }
 .hero-big {
   width: 400px;
@@ -154,17 +158,15 @@ img {
   margin-left: 10px;
   border-radius: 70px;
 }
+.zenith {
+  border-radius: 34.5px;
+  width: 8rem;
+  background-color: var(--button-color);
+  color: var(--font-color);
+}
 .header-nav-item {
   list-style: none;
   align-self: center;
-}
-.zenith {
-  border-radius: 34.5px;
-  background-color: var(--button-color);
-  color: var(--font-color);
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
 }
 .inbound-card-image {
   position: absolute;
@@ -334,7 +336,7 @@ button > .download-button {
   .header-nav-list > li {
     width: 100vw;
     margin: 2em;
-    padding: 3em;
+    /* padding: 3em; */
     font-size: 16px;
     font-family: "Overpass";
     font-weight: 700;

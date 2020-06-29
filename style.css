@@ -10,7 +10,6 @@ html {
 header {
   display: flex;
 }
-
 /* Global styles */
 :root {
   --button-color: #5200cc;
@@ -134,11 +133,6 @@ img {
   display: flex;
 }
 /* layput */
-.get-zenith-button {
-  background-color: var(--accent-color);
-  color: var(--font-color);
-  border-radius: 34.5px;
-}
 .top-line-hamburger-menu,
 .bottom-line-hamburger-menu {
   display: flex;
@@ -156,8 +150,12 @@ img {
   border-radius: 70px;
 }
 .zenith {
+  border-radius: 20px;
   background-color: var(--button-color);
   color: var(--font-color);
+  text-align: center;
+  display: inline-block;
+  padding: 0.5em;
 }
 .header-nav-item {
   list-style: none;

@@ -72,12 +72,14 @@
             <h2 class="footer-title">Stay up to date</h2>
             <div class="footer-desktop-buttons">
               <form action="#">
-              <input type="text" class="name" name="name" placeholder="Name">
+              <input type="text" class="name" name="name" placeholder="Name" required
+                      minlength="5" maxlength="32">
               <input type="text" class="sign-button" name="sign-up" placeholder="SIGN UP">       
             </div>
             <div class="footer-mobile-button section">
               <form action="#">
-              <input type="text" class="email" name="email" placeholder="Email address">
+              <input type="email" class="email" name="email_address" placeholder="Email"
+                      pattern=".+globex.com" size="30" required>
               </form> 
               <button class="download-button">DOWNLOAD</button>
           </div>

@@ -74,7 +74,7 @@ img {
 .header-nav {
   position: fixed;
   display: flex;
-  background-color: var(--font-color);
+  background-color: white;
   width: 100%;
 }
 .hamburger-menu {
@@ -327,7 +327,6 @@ button > .download-button {
     width: 100%;
     justify-self: flex-end;
     height: auto;
-    /* padding-left: 150px; */
   }
   .header-nav-list {
     display: flex;

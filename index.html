@@ -5,76 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="EI=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
     <link href="./fonts/futura-book.ttf" href="./fonts/futura-heavy (1).ttf">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <meta name="description" content="Zenith landing page by Nishi Haider">
     <title>Zenith Landing Page</title>
   </head>
   <body>
-    <nav class="header-nav">
-      <img
-      class="zenith-logo"
-      src="./images/zenith-logo.png"
-      alt="Zenith logo"
-      />
-      <ul class="header-nav-list">
-        <li class="header-nav-item">Features</li>
-        <li class="header-nav-item">Integration</li>
-        <li class="header-nav-item">Get Zenith</li>
-      </ul>
-      <div class="hamburger-menu">
-        <span class="top-line-hamburger-menu"></span>
-        <span class="bottom-line-hamburger-menu"></span>
-      </div> 
-    </nav>
+        <div>
+          <nav class="header-nav">
+              <img class="zenith-logo" src="./images/zenith-logo.png" alt="Zenith logo"/>
+              <div class="hamburger-menu">
+                <span class="top-line-hamburger-menu"></span>
+                <span class="bottom-line-hamburger-menu"></span>
+              </div> 
+              <ul class="header-nav-list">
+                <li class="header-nav-item">Features</li>
+                <li class="header-nav-item">Integration</li>
+                <li class="header-nav-item zenith">Get Zenith</li>
+              </ul>
+          </nav>
+        </div>
   <header class="hero">
-      <div class="hero-landing">
-          <h1 class="hero-heading">
-            All your communication.<br />
-            One place.
-          </h1>
-      </div>
-      <div class="inbound-card-section">
-          <img class="inbound-card-image" src="./images/inbound-card.png" alt="inbound">
-      </div>
-        <img
-        class="hero-big"
-        src="./images/hero-bg-texture.png"
-        alt="big-hero"
-        />
-    </header>
+          <h1   class="hero-heading">All your communication.<br>One place.</h1>
+          <img  class="inbound-card-image container" src="./images/inbound-card.png" alt="inbound">
+          <img  class="hero-big" src="./images/hero-bg-texture.png" alt="big-hero"/>
+  </header>
     <div class="features-container">
-          <h1 class="features-heading">The features that matter</h1>
-          <div class="checkboxes-section">
-            <h3 class="checkboxes-description">Mark all your completed threads in one place</h3>
-            <img
-            class="checkboxes-image"
-            src="./images/features-checkboxes.png"
-            alt="checkboxes"
-            />
-        </div>
-        <div class="integrations-section">
+            <div class="features-heading-section">
+                <h1 class="features-heading">The features that matter</h1>
+            </div>
+          <div class="checkboxes-section container">
+            <h3   class="checkboxes-description">Mark all your completed threads in one place</h3>
+            <img  class="checkboxes-image"src="./images/features-checkboxes.png" alt="checkboxes"/>
+          </div>
+        <div class="integrations-section container">
           <h3 class="integrations-description">Integrate all your communication platforms</h3>
-          <img
-            class="integration-image"
-            src="./images/features-integrations.png"
-            alt="integration"
-          />
+          <img class="integration-image" src="./images/features-integrations.png" alt="integration"/>
         </div>
-        <div class="notifications-section">
+        <div class="notifications-section container">
           <h3 class="notifications-description">See all your notifications in one place</h3>
-          <img
-            class="notifications-image"
-            src="./images/features-notifications.png"
-            alt="notification"
-          />
+          <img class="notifications-image" src="./images/features-notifications.png" alt="notification"/>
         </div>
-      <div class="zenith-dashboard">
+    </div>
+  </div>
+      <div class="zenith-dashboard container">
         <img src="./images/zenith-dasboard.png" alt="Zenith dashboard" />
       </div>
-      <div class="favorite-container">
+      <div class="favorite-container container">
           <h1 class="favorite-heading">Your favorite products finally together</h1>
       </div>
-        <div class="sponsers">
+        <div class="sponsers container">
           <div class="slack-google">
             <img class="slack" src="./images/slack-full.png" alt="slack" />
             <img class="google" src="./images/google.png" alt="google" />
@@ -83,36 +64,29 @@
             <img class="trello" src="./images/trello.png" alt="trello" />
             <img class="jira" src="./images/jira.png" alt="jira" />
           </div>
-        </div>
-            <div class="asana-logo section">
+        </div>  
+              <div class="asana-logo section">
                 <img src="./images/asana (2).png" alt="asana">
-            </div>
+              </div>
         <footer class="footer">
-          <div class="footer-container">
             <h2 class="footer-title">Stay up to date</h2>
+            <div class="footer-desktop-buttons">
+              <form action="#">
+              <input type="text" class="name" name="name" placeholder="Name">
+              <input type="text" class="sign-button" name="sign-up" placeholder="SIGN UP">       
+            </div>
+            <div class="footer-mobile-button section">
+              <form action="#">
+              <input type="text" class="email" name="email" placeholder="Email address">
+              </form> 
+              <button class="download-button">DOWNLOAD</button>
           </div>
-          <div class="footer-desktop-buttons">
-            <form action="#">
-              <input type="text" class="name" name="name"
-                      placeholder="Name">
-              <input type="text" class="sign-button" name="sign-up"
-                      placeholder="SIGN UP">       
-          </div>
-          <div class="footer-mobile-button section">
-            <form action="#">
-            <input type="text" class="email" name="email"
-                    placeholder="Email address">
-            </form> 
-            <button class="download-button">DOWNLOAD</button>
-          </div>
-              <ul class="footer-nav-ul">
+              <ul class="footer-nav-ul container">
                 <li class="footer-nav-item"><a href="#">CONTACT</a></li>
                 <li class="footer-nav-item"><a href="#">OUR TEAM</a></li>
                 <li class="footer-nav-item"><a href="#">POLICIES</a></li>
                 <li class="footer-nav-item"><a href="#">PRIVACY & TERMS</a></li>
               </ul>
-            </div>
         </footer>
-        </section>
   </body>
 </html>

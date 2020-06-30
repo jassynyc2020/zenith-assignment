@@ -52,27 +52,28 @@ img {
 }
 @media screen and (max-width: 700px) {
   .header-nav-list > li {
-    visibility: hidden;
+    display: none;
   }
   .header-nav-list {
-    visibility: hidden;
+    display: none;
   }
   .footer-desktop-buttons {
-    visibility: hidden;
+    display: none;
   }
 }
 @media screen and (min-width: 700px) {
   .hamburger-menu {
-    visibility: hidden;
+    display: none;
   }
   .footer-mobile-button {
-    visibility: hidden;
+    display: none;
   }
 }
 /* block */
 .header-nav {
   position: fixed;
   display: flex;
+  justify-content: space-between;
   background-color: white;
   width: 100%;
 }
@@ -85,8 +86,7 @@ img {
 .zenith-logo {
   justify-self: flex-start;
   margin: 1em 1em;
-  width: 130px;
-  height: 50px;
+  max-width: 130px;
 }
 .hero-big {
   padding-top: 8em;
@@ -149,6 +149,11 @@ img {
   margin-left: 10px;
   border-radius: 70px;
 }
+.header-nav-item {
+  list-style: none;
+  align-self: center;
+  padding: 15px;
+}
 .zenith {
   border-radius: 20px;
   background-color: var(--button-color);
@@ -156,10 +161,6 @@ img {
   text-align: center;
   display: inline-block;
   padding: 0.5em;
-}
-.header-nav-item {
-  list-style: none;
-  align-self: center;
 }
 .inbound-card-image {
   position: absolute;
@@ -319,9 +320,9 @@ button > .download-button {
   }
   .header-nav-list {
     display: flex;
+    justify-content: flex-end;
   }
-  .header-nav-list > li {
-    margin: 4em;
+  .header-nav-item {
     font-size: 16px;
     font-family: "Overpass";
     font-weight: 700;
@@ -332,8 +333,7 @@ button > .download-button {
     margin-bottom: 3em;
   }
   .zenith-logo {
-    width: 300px;
-    height: 100px;
+    max-width: 150px;
     padding-right: 1em;
   }
   .hero-big {
@@ -435,10 +435,6 @@ button > .download-button {
     display: grid;
     margin: 0;
     width: 100%;
-  }
-  .zenith-logo {
-    width: 300px;
-    height: 100px;
   }
   .hero-heading {
     display: grid;
